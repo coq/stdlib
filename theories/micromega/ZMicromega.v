@@ -576,7 +576,7 @@ Qed.
 Definition cnfZ (Annot: Type) (TX : Tauto.kind -> Type)  (AF : Type) (k: Tauto.kind) (f : TFormula (Formula Z) Annot TX AF k) :=
   rxcnf Zunsat Zdeduce normalise negate true f.
 
-#[deprecated(since="9.1", note="Use MMicromega.ZArithProof instead.")]
+(*#[deprecated(since="9.1", note="Use MMicromega.ZArithProof instead.")]*)
 Definition ZArithProof := ZArithProof.
 
 Definition ZTautoChecker  (f : BFormula (Formula Z) Tauto.isProp) (w: list ZArithProof): bool :=
